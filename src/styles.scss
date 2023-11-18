@@ -1,0 +1,220 @@
+:root {
+    --body-font-color: #595959;
+    --light-bg: #ffffff;
+    --smokebg: #f0f7ff;
+    --blue: #3630c1;
+    --green-blue: #24befa;
+    --ping1: #b72fe9;
+    --ping2: #b933f9;
+    --orange: #ff8f10;
+    --light-bg2: #d7faff;
+    --dark: #3c4859;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+    background-size: cover;
+    background-color: var(--light-bg2);
+    background-repeat: no-repeat;
+    transition: ease 200ms;
+    -webkit-transition: ease 200ms;
+}
+
+header {
+    padding: 0px 15px;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-content-wrapper {
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header h1 {
+    font-size: 3.2rem;
+    line-height: 1.3;
+    letter-spacing: 0.01rem;
+    background: linear-gradient(-45deg,var(--ping1),var(--blue),var(--blue),var(--ping2));
+    background-size: 200%;
+    background-clip: border-box;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 52px;
+    border: 7px solid var(--orange);
+    border-bottom: 0;
+    border-top: 0;
+    border-radius: 13px;
+}
+
+.logo a {
+    position: relative;
+    font-weight: 900;
+    display: block;
+    font-size: 5rem;
+    background: linear-gradient(-45deg,var(--orange),var(--blue),var(--ping2),var(--ping1));
+    background-size: 200%;
+    background-clip: border-box;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    margin-bottom: 25px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 90px;
+    width: 100%;
+}
+
+.header-nav .action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px;
+    border: 1px solid rgba(0,0,0,.05);
+    background-color: var(--orange);
+    font-weight: 600;
+    cursor: pointer;
+    outline: none !important;
+    color: var(--light-bg);
+    border-top-right-radius: 13px;
+    border-bottom-left-radius: 13px;
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    text-decoration: none;
+}
+
+.header-nav .action span:first-child {
+    margin-right: 5px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: var(--dark);
+    font-weight: 400;
+}
+
+.box-section {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.box-item {
+    padding: 1.7rem;
+    background: rgba(255,255,255,0.54);
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: 200px;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0 48px 100px 0 rgba(17,12,46,.14);
+    transition: ease 250ms;
+    -webkit-transition: ease 250ms;
+}
+
+.box-item h2 {
+    color: var(--ping2);
+    margin-bottom: 10px;
+}
+
+.box-item:hover {
+    box-shadow: 3px 20px 90px 5px rgba(17,12,46,.05);
+    transform: scale(1.04);
+    transition: ease 250ms;
+    -webkit-transition: ease 250ms;
+}
+
+.box-item:hover svg {
+    fill: var(--blue);
+    transition: ease 250ms;
+    -webkit-transition: ease 250ms;
+}
+
+.box-item:hover h2 {
+    color: var(--blue) ;
+}
+
+.box-icon {
+    display: block;
+    max-width: 64px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box-icon svg {
+    width: 80px;
+    height: 80px;
+    fill: var(--ping1);
+}
+
+@media screen and (min-width: 320px) {
+    .box-item {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .box-item {
+        width: 45%;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .box-item {
+        width: 40%;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .box-item {
+        width: 320px;
+    }
+
+    h1 {
+        font-size: 3.1rem;
+    }
+}

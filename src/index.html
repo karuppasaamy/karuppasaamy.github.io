@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <base href="/">
+  <title>Karuppasamy - UI Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta content='My name is Karuppasamy. i am a UI Developer based in Chennai, India. highly skilled professional at user interface, web, mobile applications.' name='description'/>
+  <meta name="keywords" content="UI Developer, Chennai, India, User Interface, Web Applications, Mobile Applications, Skilled Professional, UI Design, Frontend Development, Karuppasamy, User Experience, Web Design, Mobile App Design, UI/UX Design, Frontend Programming, Chennai UI Developer, Interface Design, Responsive Design, UI Specialist, Website Development, Application Design" />
+  <meta name="author" content="Karuppasamy">
+  <meta name="canonical" content="https://karuppasaamy.github.io/">
+  <!-- Open Graph Meta Tags -->
+
+</head>
+<body class="body">
+  <app-root></app-root>
+  <script>
+    let i = 0;
+    function change() {
+        let doc = document.querySelector('.body');
+        let color = ['#F2E7E7', '#EDF2E7', '#E7EAF2', '#F2E7F2', '#EAE7F2', '#E7F2F0', '#F2F0E7'];
+
+        doc.style.backgroundColor = color[i];
+        i = (i + 1) % color.length;
+    }
+    setInterval(change, 1800);
+</script>
+</body>
+
+</html>
